@@ -30,7 +30,7 @@ export default function WhyChoose() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.1, duration: 0.6 }}
-              whileHover={{ boxShadow: "0 0 30px rgba(6,182,212,0.5)" }}
+              whileHover={{ boxShadow: "0 0 30px rgba(0,217,255,0.6)" }}
               className="p-8 rounded-xl bg-cyan-bright/10 border-2 border-cyan-bright/30 hover:border-cyan-bright transition-all text-center"
             >
               <div className="text-5xl mb-4">{reason.icon}</div>
