@@ -77,7 +77,7 @@ export default function Services() {
               key={index}
               variants={itemVariants}
               whileHover={{ y: -10, boxShadow: "0 20px 40px rgba(0,217,255,0.4)" }}
-              className="service-card group relative h-72 rounded-xl overflow-hidden border border-border hover:border-cyan-bright transition-all cursor-pointer"
+              className="service-card group relative h-72 rounded-xl overflow-hidden glass-card cursor-pointer"
             >
               {/* Background Image */}
               <Image
