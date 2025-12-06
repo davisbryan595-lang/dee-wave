@@ -66,7 +66,7 @@ export default function Navigation() {
               onClick={() => setIsOpen(!isOpen)}
               className="md:hidden p-2 text-white hover:text-cyan-bright transition-colors"
             >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
+              {isOpen ? <X size={20} /> : <Menu size={20} />}
             </motion.button>
           </div>
         </div>
