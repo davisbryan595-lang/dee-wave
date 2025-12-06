@@ -145,7 +145,7 @@ export default function Contact() {
           <p className="text-white text-lg mb-4">Or call us directly</p>
           <a
             href="tel:727-408-1143"
-            className="text-4xl font-bold text-cyan-bright hover:text-pink-foam transition-colors"
+            className="text-4xl font-bold text-cyan-bright hover:text-pink-hot transition-colors glow-cyan"
           >
             727-408-1143
           </a>
