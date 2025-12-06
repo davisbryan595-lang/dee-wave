@@ -61,7 +61,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.8 }}
-          className="text-lg md:text-xl text-cyan-bright mb-12 font-light"
+          className="text-lg md:text-xl text-cyan-bright mb-12 font-light glow-cyan"
         >
           We Come To You — Pinellas • Pasco • Hillsborough
         </motion.p>
