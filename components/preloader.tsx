@@ -31,9 +31,9 @@ export default function Preloader() {
                 />
                 <defs>
                   <linearGradient id="waveGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="#3B82F6" />
-                    <stop offset="50%" stopColor="#06B6D4" />
-                    <stop offset="100%" stopColor="#F472B6" />
+                    <stop offset="0%" stopColor="#1E88E5" />
+                    <stop offset="50%" stopColor="#00D9FF" />
+                    <stop offset="100%" stopColor="#E81E8C" />
                   </linearGradient>
                 </defs>
               </svg>
