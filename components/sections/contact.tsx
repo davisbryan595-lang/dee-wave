@@ -130,7 +130,7 @@ export default function Contact() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             type="submit"
-            className="w-full py-4 rounded-lg gradient-button text-lg font-bold hover:shadow-2xl transition-all"
+            className="w-full py-4 rounded-lg bg-gradient-to-r from-wave-dark-blue via-wave-bright-blue to-pink-hot text-white text-lg font-bold hover:shadow-2xl hover:shadow-pink-hot/50 transition-all"
           >
             Book Your Detail
           </motion.button>
