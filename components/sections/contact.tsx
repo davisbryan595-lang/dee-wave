@@ -150,6 +150,45 @@ export default function Contact() {
             727-408-1143
           </a>
         </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6, duration: 0.8 }}
+          className="mt-20 grid grid-cols-1 md:grid-cols-3 gap-6"
+        >
+          <motion.div
+            whileHover={{ y: -5 }}
+            className="glass-card p-6 text-center rounded-xl"
+          >
+            <div className="text-4xl mb-4">📍</div>
+            <h3 className="text-white font-bold mb-2">Service Area</h3>
+            <p className="text-white-pure/80">Tampa Bay & surrounding areas</p>
+          </motion.div>
+
+          <motion.div
+            whileHover={{ y: -5 }}
+            className="glass-card p-6 text-center rounded-xl"
+          >
+            <div className="text-4xl mb-4">📞</div>
+            <h3 className="text-white font-bold mb-2">Phone</h3>
+            <a
+              href="tel:727-408-1143"
+              className="text-cyan-bright hover:text-white transition-colors"
+            >
+              727-408-1143
+            </a>
+          </motion.div>
+
+          <motion.div
+            whileHover={{ y: -5 }}
+            className="glass-card p-6 text-center rounded-xl"
+          >
+            <div className="text-4xl mb-4">⏰</div>
+            <h3 className="text-white font-bold mb-2">Hours</h3>
+            <p className="text-white-pure/80">Available 7 days a week</p>
+          </motion.div>
+        </motion.div>
       </div>
     </section>
   )
