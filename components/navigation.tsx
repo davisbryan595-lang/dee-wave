@@ -81,21 +81,21 @@ export default function Navigation() {
               transition={{ duration: 0.3 }}
               className="md:hidden overflow-hidden"
             >
-              <div className="flex flex-col gap-4 py-4 border-t border-white/10">
+              <div className="flex flex-col gap-3 sm:gap-4 py-3 sm:py-4 border-t border-white/10">
                 {navLinks.map((link) => (
                   <motion.a
                     key={link.label}
                     href={link.href}
                     onClick={() => setIsOpen(false)}
                     whileHover={{ x: 4 }}
-                    className="text-white font-medium hover:text-cyan-bright transition-colors"
+                    className="text-white font-medium text-sm sm:text-base hover:text-cyan-bright transition-colors"
                   >
                     {link.label}
                   </motion.a>
                 ))}
                 <a
                   href="tel:727-408-1143"
-                  className="px-6 py-2 rounded-full bg-gradient-to-r from-wave-bright-blue to-pink-hot text-white font-semibold text-center hover:shadow-xl"
+                  className="px-4 sm:px-6 py-2 rounded-full bg-gradient-to-r from-wave-bright-blue to-pink-hot text-white font-semibold text-xs sm:text-sm text-center hover:shadow-xl"
                 >
                   Call 727-408-1143
                 </a>
