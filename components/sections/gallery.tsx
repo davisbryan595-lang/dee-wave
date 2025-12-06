@@ -72,7 +72,7 @@ export default function Gallery() {
             <motion.div
               initial={{ scale: 0.5 }}
               animate={{ scale: 1 }}
-              className="relative w-full max-w-3xl aspect-square border-4 border-gradient-wave rounded-xl overflow-hidden"
+              className="relative w-full max-w-3xl aspect-square glass-card rounded-xl overflow-hidden"
             >
               <Image
                 src={galleryImages[selectedImage - 1].src || "/placeholder.svg"}
