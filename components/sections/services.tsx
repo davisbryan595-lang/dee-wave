@@ -76,7 +76,7 @@ export default function Services() {
             <motion.div
               key={index}
               variants={itemVariants}
-              whileHover={{ y: -10, boxShadow: "0 20px 40px rgba(6,182,212,0.3)" }}
+              whileHover={{ y: -10, boxShadow: "0 20px 40px rgba(0,217,255,0.4)" }}
               className="service-card group relative h-72 rounded-xl overflow-hidden border border-border hover:border-cyan-bright transition-all cursor-pointer"
             >
               {/* Background Image */}
