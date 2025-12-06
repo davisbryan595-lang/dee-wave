@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import { motion } from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion"
 import Image from "next/image"
 
 const galleryImages = [
@@ -21,6 +21,10 @@ const galleryImages = [
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null)
+  const [showAll, setShowAll] = useState(false)
+
+  const MOBILE_INITIAL_COUNT = 4
+  const displayedImages = showAll ? galleryImages : galleryImages.slice(0, MOBILE_INITIAL_COUNT)
 
   return (
     <section id="gallery" className="py-24 px-6">
