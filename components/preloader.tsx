@@ -12,7 +12,7 @@ export default function Preloader() {
   }, [])
 
   return (
-    <div className="fixed inset-0 bg-gradient-to-b from-navy-dark via-navy-dark to-wave-dark-blue flex items-center justify-center z-50">
+    <div className="fixed inset-0 bg-gradient-to-br from-navy-dark via-wave-dark-blue to-navy-dark flex items-center justify-center z-50">
       <div className="text-center">
         {/* Spinning Wave Logo */}
         <motion.div
