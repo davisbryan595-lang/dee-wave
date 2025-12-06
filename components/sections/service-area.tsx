@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 export default function ServiceArea() {
   return (
-    <section className="py-24 px-6 bg-navy-dark">
+    <section className="py-24 px-6">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
