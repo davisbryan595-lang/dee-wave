@@ -150,7 +150,8 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-gradient-to-br from-navy-dark via-wave-dark-blue to-navy-dark text-foreground;
+    background-attachment: fixed;
   }
 }
 
