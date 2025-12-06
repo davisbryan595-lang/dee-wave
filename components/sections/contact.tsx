@@ -36,11 +36,11 @@ export default function Contact() {
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-4">Book Your Detail</h2>
-          <p className="text-white-pure/80 text-lg">Let's make your car shine like never before</p>
-          <div className="w-32 h-1 bg-gradient-to-r from-wave-dark-blue via-white-pure to-pink-hot mx-auto rounded-full mt-4" />
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4">Book Your Detail</h2>
+          <p className="text-white-pure/80 text-base sm:text-lg">Let's make your car shine like never before</p>
+          <div className="w-24 sm:w-32 h-1 bg-gradient-to-r from-wave-dark-blue via-white-pure to-pink-hot mx-auto rounded-full mt-4" />
         </motion.div>
 
         <motion.form
@@ -48,9 +48,9 @@ export default function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           onSubmit={handleSubmit}
-          className="space-y-6"
+          className="space-y-4 sm:space-y-6"
         >
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
             <motion.input
               whileFocus={{ scale: 1.02 }}
               type="text"
@@ -59,7 +59,7 @@ export default function Contact() {
               value={formData.name}
               onChange={handleChange}
               required
-              className="px-6 py-3 rounded-lg bg-white/10 backdrop-blur-xl border border-white/30 text-white placeholder-white/50 focus:bg-white/20 focus:border-white/50 outline-none transition-all"
+              className="px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg bg-white/10 backdrop-blur-xl border border-white/30 text-white placeholder-white/50 focus:bg-white/20 focus:border-white/50 outline-none transition-all text-sm sm:text-base"
             />
             <motion.input
               whileFocus={{ scale: 1.02 }}
@@ -69,11 +69,11 @@ export default function Contact() {
               value={formData.email}
               onChange={handleChange}
               required
-              className="px-6 py-3 rounded-lg bg-white/10 backdrop-blur-xl border border-white/30 text-white placeholder-white/50 focus:bg-white/20 focus:border-white/50 outline-none transition-all"
+              className="px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg bg-white/10 backdrop-blur-xl border border-white/30 text-white placeholder-white/50 focus:bg-white/20 focus:border-white/50 outline-none transition-all text-sm sm:text-base"
             />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
             <motion.input
               whileFocus={{ scale: 1.02 }}
               type="tel"
@@ -82,7 +82,7 @@ export default function Contact() {
               value={formData.phone}
               onChange={handleChange}
               required
-              className="px-6 py-3 rounded-lg bg-white/10 backdrop-blur-xl border border-white/30 text-white placeholder-white/50 focus:bg-white/20 focus:border-white/50 outline-none transition-all"
+              className="px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg bg-white/10 backdrop-blur-xl border border-white/30 text-white placeholder-white/50 focus:bg-white/20 focus:border-white/50 outline-none transition-all text-sm sm:text-base"
             />
             <motion.input
               whileFocus={{ scale: 1.02 }}
@@ -92,7 +92,7 @@ export default function Contact() {
               value={formData.vehicle}
               onChange={handleChange}
               required
-              className="px-6 py-3 rounded-lg bg-white/10 backdrop-blur-xl border border-white/30 text-white placeholder-white/50 focus:bg-white/20 focus:border-white/50 outline-none transition-all"
+              className="px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg bg-white/10 backdrop-blur-xl border border-white/30 text-white placeholder-white/50 focus:bg-white/20 focus:border-white/50 outline-none transition-all text-sm sm:text-base"
             />
           </div>
 
@@ -104,7 +104,7 @@ export default function Contact() {
             value={formData.address}
             onChange={handleChange}
             required
-            className="w-full px-6 py-3 rounded-lg bg-white/10 backdrop-blur-xl border border-white/30 text-white placeholder-white/50 focus:bg-white/20 focus:border-white/50 outline-none transition-all"
+            className="w-full px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg bg-white/10 backdrop-blur-xl border border-white/30 text-white placeholder-white/50 focus:bg-white/20 focus:border-white/50 outline-none transition-all text-sm sm:text-base"
           />
 
           <motion.select
@@ -113,7 +113,7 @@ export default function Contact() {
             value={formData.service}
             onChange={handleChange}
             required
-            className="w-full px-6 py-3 rounded-lg bg-white/10 backdrop-blur-xl border border-white/30 text-white focus:bg-white/20 focus:border-white/50 outline-none transition-all"
+            className="w-full px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg bg-white/10 backdrop-blur-xl border border-white/30 text-white focus:bg-white/20 focus:border-white/50 outline-none transition-all text-sm sm:text-base"
           >
             <option value="" disabled className="bg-navy-dark text-white">
               Select Service
@@ -130,7 +130,7 @@ export default function Contact() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             type="submit"
-            className="w-full py-4 rounded-lg bg-gradient-to-r from-wave-dark-blue via-wave-bright-blue to-pink-hot text-white text-lg font-bold hover:shadow-2xl hover:shadow-pink-hot/50 transition-all"
+            className="w-full py-3 sm:py-4 rounded-lg bg-gradient-to-r from-wave-dark-blue via-wave-bright-blue to-pink-hot text-white text-base sm:text-lg font-bold hover:shadow-2xl hover:shadow-pink-hot/50 transition-all"
           >
             Book Your Detail
           </motion.button>
@@ -149,6 +149,45 @@ export default function Contact() {
           >
             727-408-1143
           </a>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.6, duration: 0.8 }}
+          className="mt-12 sm:mt-20 grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6"
+        >
+          <motion.div
+            whileHover={{ y: -5 }}
+            className="glass-card p-6 text-center rounded-xl"
+          >
+            <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">📍</div>
+            <h3 className="text-white font-bold mb-2 text-sm sm:text-base">Service Area</h3>
+            <p className="text-white-pure/80 text-xs sm:text-sm">Tampa Bay & surrounding areas</p>
+          </motion.div>
+
+          <motion.div
+            whileHover={{ y: -5 }}
+            className="glass-card p-6 text-center rounded-xl"
+          >
+            <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">📞</div>
+            <h3 className="text-white font-bold mb-2 text-sm sm:text-base">Phone</h3>
+            <a
+              href="tel:727-408-1143"
+              className="text-cyan-bright hover:text-white transition-colors text-xs sm:text-sm"
+            >
+              727-408-1143
+            </a>
+          </motion.div>
+
+          <motion.div
+            whileHover={{ y: -5 }}
+            className="glass-card p-6 text-center rounded-xl"
+          >
+            <div className="text-3xl sm:text-4xl mb-3 sm:mb-4">⏰</div>
+            <h3 className="text-white font-bold mb-2 text-sm sm:text-base">Hours</h3>
+            <p className="text-white-pure/80 text-xs sm:text-sm">Available 7 days a week</p>
+          </motion.div>
         </motion.div>
       </div>
     </section>

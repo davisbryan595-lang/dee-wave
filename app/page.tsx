@@ -6,6 +6,7 @@ import Navigation from "@/components/navigation"
 import Hero from "@/components/sections/hero"
 import Services from "@/components/sections/services"
 import Gallery from "@/components/sections/gallery"
+import Pricing from "@/components/sections/pricing"
 import WhyChoose from "@/components/sections/why-choose"
 import ServiceArea from "@/components/sections/service-area"
 import Contact from "@/components/sections/contact"
@@ -36,6 +37,7 @@ export default function Home() {
       <Hero />
       <Services />
       <Gallery />
+      <Pricing />
       <WhyChoose />
       <ServiceArea />
       <Contact />

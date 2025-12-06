@@ -42,7 +42,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.8 }}
-          className="text-6xl md:text-7xl font-bold text-white mb-4 leading-tight"
+          className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-4 leading-tight"
         >
           DEEWAVE
         </motion.h1>
@@ -51,7 +51,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.8 }}
-          className="text-2xl md:text-3xl font-bold text-white mb-2"
+          className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-2"
         >
           MOBILE DETAILING
         </motion.h2>
@@ -61,7 +61,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.8 }}
-          className="text-lg md:text-xl text-cyan-bright mb-12 font-light glow-cyan"
+          className="text-sm sm:text-lg md:text-xl text-cyan-bright mb-8 sm:mb-12 font-light glow-cyan"
         >
           We Come To You — Pinellas • Pasco • Hillsborough
         </motion.p>
@@ -71,13 +71,13 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6, duration: 0.8 }}
-          className="flex flex-col sm:flex-row gap-6 justify-center"
+          className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center"
         >
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-            className="px-8 py-4 rounded-full gradient-button text-lg font-bold hover:shadow-2xl transition-all"
+            className="px-6 sm:px-8 py-3 sm:py-4 rounded-full gradient-button text-base sm:text-lg font-bold hover:shadow-2xl transition-all"
           >
             Book Now
           </motion.button>
@@ -86,7 +86,7 @@ export default function Hero() {
             href="tel:727-408-1143"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-8 py-4 rounded-full border-2 border-white-pure text-white-pure text-lg font-bold hover:bg-gradient-to-r hover:from-wave-dark-blue hover:to-pink-hot hover:border-transparent transition-all cursor-pointer glow-pink"
+            className="px-6 sm:px-8 py-3 sm:py-4 rounded-full border-2 border-white-pure text-white-pure text-base sm:text-lg font-bold hover:bg-gradient-to-r hover:from-wave-dark-blue hover:to-pink-hot hover:border-transparent transition-all cursor-pointer glow-pink"
           >
             Call 727-408-1143
           </motion.a>
