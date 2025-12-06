@@ -55,7 +55,7 @@ export default function Navigation() {
           <div className="flex items-center gap-4">
             <a
               href="tel:727-408-1143"
-              className="px-6 py-2 rounded-full glass-button hidden sm:inline-block"
+              className="px-6 py-2 rounded-full bg-gradient-to-r from-wave-bright-blue to-pink-hot text-white font-semibold hover:shadow-2xl hover:shadow-pink-hot/50 transition-all hidden sm:inline-block"
             >
               Call 727-408-1143
             </a>
