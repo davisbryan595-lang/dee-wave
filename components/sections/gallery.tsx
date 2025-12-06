@@ -23,7 +23,7 @@ export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null)
 
   return (
-    <section id="gallery" className="py-24 px-6 bg-navy-dark">
+    <section id="gallery" className="py-24 px-6">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
