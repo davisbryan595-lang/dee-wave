@@ -133,16 +133,16 @@ export default function Pricing() {
                 </div>
               )}
 
-              <div className="p-8">
-                <h3 className="text-2xl font-bold text-white mb-2">
+              <div className="p-6 sm:p-8">
+                <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">
                   {plan.name}
                 </h3>
-                <p className="text-white-pure/60 text-sm mb-4">
+                <p className="text-white-pure/60 text-xs sm:text-sm mb-4">
                   {plan.description}
                 </p>
 
-                <div className="mb-8">
-                  <span className="text-5xl font-bold bg-gradient-to-r from-wave-bright-blue to-pink-hot bg-clip-text text-transparent">
+                <div className="mb-6 sm:mb-8">
+                  <span className="text-4xl sm:text-5xl font-bold bg-gradient-to-r from-wave-bright-blue to-pink-hot bg-clip-text text-transparent">
                     {plan.price}
                   </span>
                 </div>
@@ -150,7 +150,7 @@ export default function Pricing() {
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  className={`w-full py-3 rounded-lg font-bold transition-all mb-8 ${
+                  className={`w-full py-2.5 sm:py-3 rounded-lg font-bold transition-all mb-6 sm:mb-8 text-sm sm:text-base ${
                     plan.popular
                       ? "bg-gradient-to-r from-wave-dark-blue via-wave-bright-blue to-pink-hot text-white hover:shadow-2xl hover:shadow-pink-hot/50"
                       : "bg-white/10 border border-white/30 text-white hover:bg-white/20 hover:border-white/50"
@@ -159,11 +159,11 @@ export default function Pricing() {
                   Book Service
                 </motion.button>
 
-                <div className="space-y-4">
+                <div className="space-y-3 sm:space-y-4">
                   {plan.features.map((feature, featureIndex) => (
                     <div key={featureIndex} className="flex items-start gap-3">
-                      <Check className="w-5 h-5 text-cyan-bright flex-shrink-0 mt-0.5" />
-                      <span className="text-white-pure/80 text-sm">
+                      <Check className="w-4 sm:w-5 h-4 sm:h-5 text-cyan-bright flex-shrink-0 mt-0.5" />
+                      <span className="text-white-pure/80 text-xs sm:text-sm">
                         {feature}
                       </span>
                     </div>
