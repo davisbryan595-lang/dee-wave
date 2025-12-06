@@ -41,28 +41,49 @@ export default function Gallery() {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {galleryImages.map((image, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, scale: 0.9 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ delay: index * 0.05, duration: 0.5 }}
-              whileHover={{ scale: 1.05, boxShadow: "0 0 30px rgba(0,217,255,0.5)" }}
-              onClick={() => setSelectedImage(image.id)}
-              className="group relative aspect-square rounded-xl overflow-hidden cursor-pointer glass-card"
-            >
-              <Image
-                src={image.src || "/placeholder.svg"}
-                alt={`Car detail ${image.id}`}
-                fill
-                className="object-cover group-hover:scale-110 transition-transform duration-500"
-              />
-              <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                <span className="text-white text-3xl">→</span>
-              </div>
-            </motion.div>
-          ))}
+          <AnimatePresence mode="wait">
+            {displayedImages.map((image, index) => (
+              <motion.div
+                key={image.id}
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.9 }}
+                transition={{ delay: index * 0.05, duration: 0.5 }}
+                whileHover={{ scale: 1.05, boxShadow: "0 0 30px rgba(0,217,255,0.5)" }}
+                onClick={() => setSelectedImage(image.id)}
+                className="group relative aspect-square rounded-xl overflow-hidden cursor-pointer glass-card"
+              >
+                <Image
+                  src={image.src || "/placeholder.svg"}
+                  alt={`Car detail ${image.id}`}
+                  fill
+                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <span className="text-white text-3xl">→</span>
+                </div>
+              </motion.div>
+            ))}
+          </AnimatePresence>
         </div>
+
+        {!showAll && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="flex justify-center mt-8 md:hidden"
+          >
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={() => setShowAll(true)}
+              className="px-8 py-3 rounded-lg bg-gradient-to-r from-wave-dark-blue via-wave-bright-blue to-pink-hot text-white font-bold hover:shadow-2xl hover:shadow-pink-hot/50 transition-all"
+            >
+              See More Gallery
+            </motion.button>
+          </motion.div>
+        )}
 
         {/* Lightbox */}
         {selectedImage && (
