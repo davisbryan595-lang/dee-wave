@@ -33,11 +33,11 @@ export default function Gallery() {
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-4">Before & After</h2>
-          <p className="text-white-pure/80 text-lg">See the DeeWave transformation</p>
-          <div className="w-32 h-1 bg-gradient-to-r from-wave-dark-blue via-white-pure to-pink-hot mx-auto rounded-full mt-4" />
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4">Before & After</h2>
+          <p className="text-white-pure/80 text-base sm:text-lg">See the DeeWave transformation</p>
+          <div className="w-24 sm:w-32 h-1 bg-gradient-to-r from-wave-dark-blue via-white-pure to-pink-hot mx-auto rounded-full mt-4" />
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
