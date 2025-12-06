@@ -53,7 +53,7 @@ export default function Services() {
   }
 
   return (
-    <section className="py-24 px-6 bg-navy-dark relative">
+    <section id="services" className="py-24 px-6 relative">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
@@ -62,7 +62,7 @@ export default function Services() {
           className="text-center mb-16"
         >
           <h2 className="text-5xl md:text-6xl font-bold text-white mb-4">Our Services</h2>
-          <div className="w-32 h-1 bg-gradient-wave mx-auto rounded-full" />
+          <div className="w-32 h-1 bg-gradient-to-r from-wave-dark-blue via-white-pure to-pink-hot mx-auto rounded-full" />
         </motion.div>
 
         <motion.div
@@ -76,8 +76,8 @@ export default function Services() {
             <motion.div
               key={index}
               variants={itemVariants}
-              whileHover={{ y: -10, boxShadow: "0 20px 40px rgba(6,182,212,0.3)" }}
-              className="service-card group relative h-72 rounded-xl overflow-hidden border border-border hover:border-cyan-bright transition-all cursor-pointer"
+              whileHover={{ y: -10, boxShadow: "0 20px 40px rgba(0,217,255,0.4)" }}
+              className="service-card group relative h-72 rounded-xl overflow-hidden glass-card cursor-pointer"
             >
               {/* Background Image */}
               <Image

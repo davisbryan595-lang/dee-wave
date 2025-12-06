@@ -30,7 +30,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-24 px-6 bg-gradient-to-b from-wave-blue/20 to-navy-dark">
+    <section id="contact" className="py-24 px-6">
       <div className="max-w-3xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
@@ -39,8 +39,8 @@ export default function Contact() {
           className="text-center mb-16"
         >
           <h2 className="text-5xl md:text-6xl font-bold text-white mb-4">Book Your Detail</h2>
-          <p className="text-cyan-bright text-lg">Let's make your car shine like never before</p>
-          <div className="w-32 h-1 bg-gradient-wave mx-auto rounded-full mt-4" />
+          <p className="text-white-pure/80 text-lg">Let's make your car shine like never before</p>
+          <div className="w-32 h-1 bg-gradient-to-r from-wave-dark-blue via-white-pure to-pink-hot mx-auto rounded-full mt-4" />
         </motion.div>
 
         <motion.form
@@ -59,7 +59,7 @@ export default function Contact() {
               value={formData.name}
               onChange={handleChange}
               required
-              className="px-6 py-3 rounded-lg bg-cyan-bright/10 border-2 border-cyan-bright/50 text-white placeholder-gray-400 focus:border-cyan-bright outline-none transition-all"
+              className="px-6 py-3 rounded-lg bg-white/10 backdrop-blur-xl border border-white/30 text-white placeholder-white/50 focus:bg-white/20 focus:border-white/50 outline-none transition-all"
             />
             <motion.input
               whileFocus={{ scale: 1.02 }}
@@ -69,7 +69,7 @@ export default function Contact() {
               value={formData.email}
               onChange={handleChange}
               required
-              className="px-6 py-3 rounded-lg bg-cyan-bright/10 border-2 border-cyan-bright/50 text-white placeholder-gray-400 focus:border-cyan-bright outline-none transition-all"
+              className="px-6 py-3 rounded-lg bg-white/10 backdrop-blur-xl border border-white/30 text-white placeholder-white/50 focus:bg-white/20 focus:border-white/50 outline-none transition-all"
             />
           </div>
 
@@ -82,7 +82,7 @@ export default function Contact() {
               value={formData.phone}
               onChange={handleChange}
               required
-              className="px-6 py-3 rounded-lg bg-cyan-bright/10 border-2 border-cyan-bright/50 text-white placeholder-gray-400 focus:border-cyan-bright outline-none transition-all"
+              className="px-6 py-3 rounded-lg bg-white/10 backdrop-blur-xl border border-white/30 text-white placeholder-white/50 focus:bg-white/20 focus:border-white/50 outline-none transition-all"
             />
             <motion.input
               whileFocus={{ scale: 1.02 }}
@@ -92,7 +92,7 @@ export default function Contact() {
               value={formData.vehicle}
               onChange={handleChange}
               required
-              className="px-6 py-3 rounded-lg bg-cyan-bright/10 border-2 border-cyan-bright/50 text-white placeholder-gray-400 focus:border-cyan-bright outline-none transition-all"
+              className="px-6 py-3 rounded-lg bg-white/10 backdrop-blur-xl border border-white/30 text-white placeholder-white/50 focus:bg-white/20 focus:border-white/50 outline-none transition-all"
             />
           </div>
 
@@ -104,7 +104,7 @@ export default function Contact() {
             value={formData.address}
             onChange={handleChange}
             required
-            className="w-full px-6 py-3 rounded-lg bg-cyan-bright/10 border-2 border-cyan-bright/50 text-white placeholder-gray-400 focus:border-cyan-bright outline-none transition-all"
+            className="w-full px-6 py-3 rounded-lg bg-white/10 backdrop-blur-xl border border-white/30 text-white placeholder-white/50 focus:bg-white/20 focus:border-white/50 outline-none transition-all"
           />
 
           <motion.select
@@ -113,24 +113,24 @@ export default function Contact() {
             value={formData.service}
             onChange={handleChange}
             required
-            className="w-full px-6 py-3 rounded-lg bg-cyan-bright/10 border-2 border-cyan-bright/50 text-white focus:border-cyan-bright outline-none transition-all"
+            className="w-full px-6 py-3 rounded-lg bg-white/10 backdrop-blur-xl border border-white/30 text-white focus:bg-white/20 focus:border-white/50 outline-none transition-all"
           >
-            <option value="" disabled>
+            <option value="" disabled className="bg-navy-dark text-white">
               Select Service
             </option>
-            <option value="interior">Interior Detail</option>
-            <option value="exterior">Exterior Detail</option>
-            <option value="full">Full Detail Package</option>
-            <option value="ceramic">Ceramic Coating</option>
-            <option value="headlight">Headlight Restoration</option>
-            <option value="paint">Paint Correction</option>
+            <option value="interior" className="bg-navy-dark text-white">Interior Detail</option>
+            <option value="exterior" className="bg-navy-dark text-white">Exterior Detail</option>
+            <option value="full" className="bg-navy-dark text-white">Full Detail Package</option>
+            <option value="ceramic" className="bg-navy-dark text-white">Ceramic Coating</option>
+            <option value="headlight" className="bg-navy-dark text-white">Headlight Restoration</option>
+            <option value="paint" className="bg-navy-dark text-white">Paint Correction</option>
           </motion.select>
 
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             type="submit"
-            className="w-full py-4 rounded-lg gradient-button text-lg font-bold hover:shadow-2xl transition-all"
+            className="w-full py-4 rounded-lg bg-gradient-to-r from-wave-dark-blue via-wave-bright-blue to-pink-hot text-white text-lg font-bold hover:shadow-2xl hover:shadow-pink-hot/50 transition-all"
           >
             Book Your Detail
           </motion.button>
@@ -145,7 +145,7 @@ export default function Contact() {
           <p className="text-white text-lg mb-4">Or call us directly</p>
           <a
             href="tel:727-408-1143"
-            className="text-4xl font-bold text-cyan-bright hover:text-pink-foam transition-colors"
+            className="text-4xl font-bold bg-gradient-to-r from-wave-bright-blue to-pink-hot bg-clip-text text-transparent hover:shadow-lg transition-all glow-pink"
           >
             727-408-1143
           </a>

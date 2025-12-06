@@ -39,11 +39,16 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
 
-  /* Add DeeWave custom colors */
+  /* DeeWave brand colors extracted from logo */
   --navy-dark: #0f172a;
-  --wave-blue: #3b82f6;
-  --cyan-bright: #06b6d4;
-  --pink-foam: #f472b6;
+  --wave-dark-blue: #0052CC;
+  --wave-blue: #1E88E5;
+  --wave-bright-blue: #3B82F6;
+  --cyan-bright: #00D9FF;
+  --cyan-light: #80F0FF;
+  --pink-hot: #E81E8C;
+  --pink-bright: #FF1493;
+  --pink-foam: #F472B6;
   --white-pure: #ffffff;
 }
 
@@ -122,10 +127,15 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
-  /* Add DeeWave custom color theme variables */
+  /* DeeWave brand color theme variables */
   --color-navy-dark: var(--navy-dark);
+  --color-wave-dark-blue: var(--wave-dark-blue);
   --color-wave-blue: var(--wave-blue);
+  --color-wave-bright-blue: var(--wave-bright-blue);
   --color-cyan-bright: var(--cyan-bright);
+  --color-cyan-light: var(--cyan-light);
+  --color-pink-hot: var(--pink-hot);
+  --color-pink-bright: var(--pink-bright);
   --color-pink-foam: var(--pink-foam);
   --color-white-pure: var(--white-pure);
 }
@@ -140,24 +150,64 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-gradient-to-br from-navy-dark via-wave-dark-blue to-pink-hot/20 text-foreground;
+    background-attachment: fixed;
   }
 }
 
 @layer utilities {
   .glow-cyan {
-    @apply shadow-[0_0_20px_rgba(6,182,212,0.6)];
+    @apply shadow-[0_0_20px_rgba(0,217,255,0.8)];
   }
 
   .glow-pink {
-    @apply shadow-[0_0_20px_rgba(244,114,182,0.6)];
+    @apply shadow-[0_0_30px_rgba(232,30,140,0.8)];
   }
 
+  .glow-blue {
+    @apply shadow-[0_0_20px_rgba(30,136,229,0.8)];
+  }
+
+  /* Logo-inspired gradients: Pink, Blue, White */
   .gradient-wave {
-    @apply bg-gradient-to-r from-wave-blue via-cyan-bright to-pink-foam;
+    @apply bg-gradient-to-r from-wave-dark-blue via-white-pure to-pink-hot;
   }
 
+  .gradient-wave-alt {
+    @apply bg-gradient-to-r from-pink-hot via-wave-bright-blue to-white-pure;
+  }
+
+  .gradient-primary {
+    @apply bg-gradient-to-r from-wave-dark-blue to-pink-hot;
+  }
+
+  .gradient-secondary {
+    @apply bg-gradient-to-r from-pink-hot to-wave-dark-blue;
+  }
+
+  /* Enhanced button gradients with pink, blue, and white */
   .gradient-button {
-    @apply bg-gradient-to-r from-wave-blue to-pink-foam text-white font-semibold shadow-lg hover:shadow-xl transition-all;
+    @apply bg-gradient-to-r from-wave-dark-blue via-wave-bright-blue to-pink-hot text-white font-semibold shadow-lg hover:shadow-2xl hover:shadow-pink-hot/50 transition-all;
+  }
+
+  .gradient-button-alt {
+    @apply bg-gradient-to-r from-pink-hot via-wave-bright-blue to-white-pure text-navy-dark font-semibold shadow-lg hover:shadow-2xl transition-all;
+  }
+
+  /* Glassmorphism Utilities */
+  .glass-navbar {
+    @apply bg-white/10 backdrop-blur-2xl border-b border-white/20 shadow-lg hover:bg-gradient-to-r hover:from-wave-dark-blue/20 hover:to-pink-hot/20 transition-colors;
+  }
+
+  .glass-button {
+    @apply bg-gradient-to-r from-wave-blue/20 to-pink-hot/20 backdrop-blur-xl border border-white/40 text-white font-semibold rounded-full px-6 py-2 hover:from-wave-blue/40 hover:to-pink-hot/40 hover:border-white/60 transition-all shadow-[0_0_20px_rgba(232,30,140,0.4)];
+  }
+
+  .glass-card {
+    @apply bg-gradient-to-br from-white/10 to-pink-hot/10 backdrop-blur-xl border border-white/20 rounded-2xl hover:border-pink-hot/40 hover:from-white/15 hover:to-pink-hot/15 transition-all;
+  }
+
+  .glass-card-hover {
+    @apply bg-gradient-to-br from-white/[0.08] to-pink-hot/[0.08] backdrop-blur-2xl border border-white/20 rounded-xl p-8 hover:from-white/[0.15] hover:to-pink-hot/[0.15] hover:border-pink-hot/40 transition-all;
   }
 }

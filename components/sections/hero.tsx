@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-gradient-to-b from-wave-dark-blue/40 via-pink-hot/10 to-transparent">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -61,7 +61,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.8 }}
-          className="text-lg md:text-xl text-cyan-bright mb-12 font-light"
+          className="text-lg md:text-xl text-cyan-bright mb-12 font-light glow-cyan"
         >
           We Come To You — Pinellas • Pasco • Hillsborough
         </motion.p>
@@ -86,7 +86,7 @@ export default function Hero() {
             href="tel:727-408-1143"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-8 py-4 rounded-full border-2 border-white-pure text-white-pure text-lg font-bold hover:bg-white-pure hover:text-navy-dark transition-all cursor-pointer"
+            className="px-8 py-4 rounded-full border-2 border-white-pure text-white-pure text-lg font-bold hover:bg-gradient-to-r hover:from-wave-dark-blue hover:to-pink-hot hover:border-transparent transition-all cursor-pointer glow-pink"
           >
             Call 727-408-1143
           </motion.a>

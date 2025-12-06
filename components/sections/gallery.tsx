@@ -23,7 +23,7 @@ export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null)
 
   return (
-    <section className="py-24 px-6 bg-navy-dark">
+    <section id="gallery" className="py-24 px-6">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
@@ -32,8 +32,8 @@ export default function Gallery() {
           className="text-center mb-16"
         >
           <h2 className="text-5xl md:text-6xl font-bold text-white mb-4">Before & After</h2>
-          <p className="text-cyan-bright text-lg">See the DeeWave transformation</p>
-          <div className="w-32 h-1 bg-gradient-wave mx-auto rounded-full mt-4" />
+          <p className="text-white-pure/80 text-lg">See the DeeWave transformation</p>
+          <div className="w-32 h-1 bg-gradient-to-r from-wave-dark-blue via-white-pure to-pink-hot mx-auto rounded-full mt-4" />
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -43,9 +43,9 @@ export default function Gallery() {
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ delay: index * 0.05, duration: 0.5 }}
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ scale: 1.05, boxShadow: "0 0 30px rgba(0,217,255,0.5)" }}
               onClick={() => setSelectedImage(image.id)}
-              className="group relative aspect-square rounded-xl overflow-hidden cursor-pointer border-2 border-gradient-wave"
+              className="group relative aspect-square rounded-xl overflow-hidden cursor-pointer glass-card"
             >
               <Image
                 src={image.src || "/placeholder.svg"}
@@ -72,7 +72,7 @@ export default function Gallery() {
             <motion.div
               initial={{ scale: 0.5 }}
               animate={{ scale: 1 }}
-              className="relative w-full max-w-3xl aspect-square border-4 border-gradient-wave rounded-xl overflow-hidden"
+              className="relative w-full max-w-3xl aspect-square glass-card rounded-xl overflow-hidden"
             >
               <Image
                 src={galleryImages[selectedImage - 1].src || "/placeholder.svg"}
