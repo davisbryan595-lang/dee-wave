@@ -86,7 +86,7 @@ export default function Hero() {
             href="tel:727-408-1143"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="px-8 py-4 rounded-full border-2 border-cyan-bright text-cyan-bright text-lg font-bold hover:bg-cyan-bright hover:text-navy-dark transition-all cursor-pointer glow-cyan"
+            className="px-8 py-4 rounded-full border-2 border-white-pure text-white-pure text-lg font-bold hover:bg-gradient-to-r hover:from-wave-dark-blue hover:to-pink-hot hover:border-transparent transition-all cursor-pointer glow-pink"
           >
             Call 727-408-1143
           </motion.a>
