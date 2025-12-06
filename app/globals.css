@@ -178,4 +178,21 @@
   .gradient-button {
     @apply bg-gradient-to-r from-wave-blue to-pink-hot text-white font-semibold shadow-lg hover:shadow-xl transition-all;
   }
+
+  /* Glassmorphism Utilities */
+  .glass-navbar {
+    @apply bg-white/10 backdrop-blur-2xl border-b border-white/20 shadow-lg hover:bg-white/[0.15] transition-colors;
+  }
+
+  .glass-button {
+    @apply bg-white/10 backdrop-blur-xl border border-white/30 text-white font-semibold rounded-full px-6 py-2 hover:bg-white/20 hover:border-white/50 transition-all glow-blue shadow-lg;
+  }
+
+  .glass-card {
+    @apply bg-white/10 backdrop-blur-xl border border-white/20 rounded-2xl hover:bg-white/[0.15] hover:border-white/30 transition-all;
+  }
+
+  .glass-card-hover {
+    @apply bg-white/[0.08] backdrop-blur-2xl border border-white/20 rounded-xl p-8 hover:bg-white/[0.12] hover:border-white/40 transition-all;
+  }
 }
