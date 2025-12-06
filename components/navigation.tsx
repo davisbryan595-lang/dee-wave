@@ -95,7 +95,7 @@ export default function Navigation() {
                 ))}
                 <a
                   href="tel:727-408-1143"
-                  className="px-6 py-2 rounded-full glass-button text-center"
+                  className="px-6 py-2 rounded-full bg-gradient-to-r from-wave-bright-blue to-pink-hot text-white font-semibold text-center hover:shadow-xl"
                 >
                   Call 727-408-1143
                 </a>
