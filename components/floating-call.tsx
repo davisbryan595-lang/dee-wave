@@ -12,7 +12,7 @@ export default function FloatingCall() {
     >
       <a
         href="tel:727-408-1143"
-        className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-wave text-white text-2xl font-bold shadow-2xl hover:shadow-pink-foam/50 transition-all glow-pink"
+        className="flex items-center justify-center w-16 h-16 rounded-full bg-gradient-wave text-white text-2xl font-bold shadow-2xl hover:shadow-pink-hot/50 transition-all glow-pink"
       >
         ☎
       </a>
