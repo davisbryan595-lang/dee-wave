@@ -45,7 +45,7 @@ export default function Gallery() {
               transition={{ delay: index * 0.05, duration: 0.5 }}
               whileHover={{ scale: 1.05, boxShadow: "0 0 30px rgba(0,217,255,0.5)" }}
               onClick={() => setSelectedImage(image.id)}
-              className="group relative aspect-square rounded-xl overflow-hidden cursor-pointer border-2 border-gradient-wave"
+              className="group relative aspect-square rounded-xl overflow-hidden cursor-pointer glass-card"
             >
               <Image
                 src={image.src || "/placeholder.svg"}
