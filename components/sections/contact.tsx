@@ -115,15 +115,15 @@ export default function Contact() {
             required
             className="w-full px-6 py-3 rounded-lg bg-white/10 backdrop-blur-xl border border-white/30 text-white focus:bg-white/20 focus:border-white/50 outline-none transition-all"
           >
-            <option value="" disabled>
+            <option value="" disabled className="bg-navy-dark text-white">
               Select Service
             </option>
-            <option value="interior">Interior Detail</option>
-            <option value="exterior">Exterior Detail</option>
-            <option value="full">Full Detail Package</option>
-            <option value="ceramic">Ceramic Coating</option>
-            <option value="headlight">Headlight Restoration</option>
-            <option value="paint">Paint Correction</option>
+            <option value="interior" className="bg-navy-dark text-white">Interior Detail</option>
+            <option value="exterior" className="bg-navy-dark text-white">Exterior Detail</option>
+            <option value="full" className="bg-navy-dark text-white">Full Detail Package</option>
+            <option value="ceramic" className="bg-navy-dark text-white">Ceramic Coating</option>
+            <option value="headlight" className="bg-navy-dark text-white">Headlight Restoration</option>
+            <option value="paint" className="bg-navy-dark text-white">Paint Correction</option>
           </motion.select>
 
           <motion.button
