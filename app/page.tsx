@@ -37,6 +37,7 @@ export default function Home() {
       <Hero />
       <Services />
       <Gallery />
+      <Pricing />
       <WhyChoose />
       <ServiceArea />
       <Contact />
