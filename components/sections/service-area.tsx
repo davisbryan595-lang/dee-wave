@@ -26,7 +26,7 @@ export default function ServiceArea() {
             <motion.div
               key={index}
               whileHover={{ y: -10 }}
-              className="p-8 rounded-xl bg-gradient-to-br from-wave-dark-blue/20 to-pink-hot/20 border border-wave-dark-blue/50 text-center hover:border-cyan-bright transition-all"
+              className="glass-card-hover text-center"
             >
               <div className="text-6xl mb-4">📍</div>
               <h3 className="text-2xl font-bold text-white">{county}</h3>
