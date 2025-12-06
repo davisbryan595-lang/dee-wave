@@ -123,7 +123,7 @@ export default function Pricing() {
               whileHover={{ y: -10 }}
               className={`pricing-card relative rounded-xl overflow-hidden transition-all ${
                 plan.popular
-                  ? "lg:scale-105 glass-card border-2 border-pink-hot shadow-2xl shadow-pink-hot/40"
+                  ? "scale-100 md:scale-105 glass-card border-2 border-pink-hot shadow-2xl shadow-pink-hot/40"
                   : "glass-card"
               }`}
             >
