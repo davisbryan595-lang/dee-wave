@@ -72,13 +72,13 @@ export default function Gallery() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="flex justify-center mt-8 md:hidden"
+            className="flex justify-center mt-6 sm:mt-8 md:hidden"
           >
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               onClick={() => setShowAll(true)}
-              className="px-8 py-3 rounded-lg bg-gradient-to-r from-wave-dark-blue via-wave-bright-blue to-pink-hot text-white font-bold hover:shadow-2xl hover:shadow-pink-hot/50 transition-all"
+              className="px-6 sm:px-8 py-2.5 sm:py-3 rounded-lg bg-gradient-to-r from-wave-dark-blue via-wave-bright-blue to-pink-hot text-white font-bold text-sm sm:text-base hover:shadow-2xl hover:shadow-pink-hot/50 transition-all"
             >
               See More Gallery
             </motion.button>
