@@ -38,13 +38,13 @@ export default function Navigation() {
           </motion.div>
 
           {/* Desktop Navigation Links */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex items-center gap-6 lg:gap-8">
             {navLinks.map((link) => (
               <motion.a
                 key={link.label}
                 href={link.href}
                 whileHover={{ y: -2 }}
-                className="text-white font-medium hover:text-cyan-bright transition-colors"
+                className="text-white font-medium text-sm lg:text-base hover:text-cyan-bright transition-colors"
               >
                 {link.label}
               </motion.a>
@@ -52,10 +52,10 @@ export default function Navigation() {
           </div>
 
           {/* Call Button */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3 sm:gap-4">
             <a
               href="tel:727-408-1143"
-              className="px-6 py-2 rounded-full bg-gradient-to-r from-wave-bright-blue to-pink-hot text-white font-semibold hover:shadow-2xl hover:shadow-pink-hot/50 transition-all hidden sm:inline-block"
+              className="px-4 sm:px-6 py-2 rounded-full bg-gradient-to-r from-wave-bright-blue to-pink-hot text-white font-semibold text-xs sm:text-sm hover:shadow-2xl hover:shadow-pink-hot/50 transition-all hidden sm:inline-block"
             >
               Call 727-408-1143
             </a>
