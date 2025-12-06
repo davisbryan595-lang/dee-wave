@@ -186,7 +186,7 @@
   }
 
   .glass-button {
-    @apply bg-white/10 backdrop-blur-xl border border-white/30 text-white font-semibold rounded-full px-6 py-2 hover:bg-white/20 hover:border-white/50 transition-all glow-blue shadow-lg;
+    @apply bg-white/10 backdrop-blur-xl border border-white/30 text-white font-semibold rounded-full px-6 py-2 hover:bg-white/20 hover:border-white/50 transition-all shadow-[0_0_20px_rgba(30,136,229,0.6)] shadow-lg;
   }
 
   .glass-card {
