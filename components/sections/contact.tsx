@@ -30,7 +30,7 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-24 px-6 bg-gradient-to-b from-wave-dark-blue/20 to-navy-dark">
+    <section id="contact" className="py-24 px-6">
       <div className="max-w-3xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: -50 }}
