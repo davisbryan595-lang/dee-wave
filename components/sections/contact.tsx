@@ -48,7 +48,7 @@ export default function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           onSubmit={handleSubmit}
-          className="space-y-6"
+          className="space-y-4 sm:space-y-6"
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <motion.input
