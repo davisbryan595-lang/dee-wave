@@ -4,10 +4,20 @@ import { useState } from "react"
 import { motion } from "framer-motion"
 import Image from "next/image"
 
-const galleryImages = Array.from({ length: 12 }, (_, i) => ({
-  id: i + 1,
-  src: `/placeholder.svg?height=400&width=400&query=car detail before and after ${i + 1}`,
-}))
+const galleryImages = [
+  { id: 1, src: "https://images.pexels.com/photos/6872601/pexels-photo-6872601.jpeg" },
+  { id: 2, src: "https://images.pexels.com/photos/17623838/pexels-photo-17623838.jpeg" },
+  { id: 3, src: "https://images.pexels.com/photos/17623850/pexels-photo-17623850.jpeg" },
+  { id: 4, src: "https://images.pexels.com/photos/24800195/pexels-photo-24800195.jpeg" },
+  { id: 5, src: "https://images.pexels.com/photos/31104041/pexels-photo-31104041.png" },
+  { id: 6, src: "https://images.pexels.com/photos/16157554/pexels-photo-16157554.jpeg" },
+  { id: 7, src: "https://images.pexels.com/photos/30751893/pexels-photo-30751893.jpeg" },
+  { id: 8, src: "https://images.pexels.com/photos/33884882/pexels-photo-33884882.jpeg" },
+  { id: 9, src: "https://images.pexels.com/photos/14533601/pexels-photo-14533601.jpeg" },
+  { id: 10, src: "https://images.pexels.com/photos/20710959/pexels-photo-20710959.jpeg" },
+  { id: 11, src: "https://images.pexels.com/photos/17156936/pexels-photo-17156936.jpeg" },
+  { id: 12, src: "https://images.pexels.com/photos/9112798/pexels-photo-9112798.jpeg" },
+]
 
 export default function Gallery() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null)

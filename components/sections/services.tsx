@@ -1,14 +1,39 @@
 "use client"
 
 import { motion } from "framer-motion"
+import Image from "next/image"
 
 const services = [
-  { name: "Interior Detail", icon: "🪑" },
-  { name: "Exterior Detail", icon: "🚗" },
-  { name: "Full Detail Package", icon: "✨" },
-  { name: "Ceramic Coating", icon: "💎" },
-  { name: "Headlight Restoration", icon: "💡" },
-  { name: "Paint Correction", icon: "🎨" },
+  {
+    name: "Interior Detail",
+    icon: "🪑",
+    image: "https://images.pexels.com/photos/14533601/pexels-photo-14533601.jpeg",
+  },
+  {
+    name: "Exterior Detail",
+    icon: "🚗",
+    image: "https://images.pexels.com/photos/31104041/pexels-photo-31104041.png",
+  },
+  {
+    name: "Full Detail Package",
+    icon: "✨",
+    image: "https://images.pexels.com/photos/16157554/pexels-photo-16157554.jpeg",
+  },
+  {
+    name: "Ceramic Coating",
+    icon: "💎",
+    image: "https://images.pexels.com/photos/10358884/pexels-photo-10358884.jpeg",
+  },
+  {
+    name: "Headlight Restoration",
+    icon: "💡",
+    image: "https://images.pexels.com/photos/33884882/pexels-photo-33884882.jpeg",
+  },
+  {
+    name: "Paint Correction",
+    icon: "🎨",
+    image: "https://images.pexels.com/photos/30751893/pexels-photo-30751893.jpeg",
+  },
 ]
 
 export default function Services() {
@@ -52,11 +77,22 @@ export default function Services() {
               key={index}
               variants={itemVariants}
               whileHover={{ y: -10, boxShadow: "0 20px 40px rgba(6,182,212,0.3)" }}
-              className="group p-8 rounded-xl bg-card border border-border hover:border-cyan-bright transition-all cursor-pointer backdrop-blur"
+              className="service-card group relative h-72 rounded-xl overflow-hidden border border-border hover:border-cyan-bright transition-all cursor-pointer"
             >
-              <div className="text-6xl mb-4 group-hover:scale-125 transition-transform">{service.icon}</div>
-              <h3 className="text-2xl font-bold text-white">{service.name}</h3>
-              <p className="text-gray-400 mt-3">Professional detailing service tailored to your needs</p>
+              {/* Background Image */}
+              <Image
+                src={service.image}
+                alt={service.name}
+                fill
+                className="object-cover brightness-50 group-hover:brightness-30 transition-all duration-500"
+              />
+
+              {/* Content */}
+              <div className="service-card-content relative z-10 h-full flex flex-col items-center justify-center p-8 text-center">
+                <div className="text-6xl mb-4 group-hover:scale-125 transition-transform">{service.icon}</div>
+                <h3 className="text-2xl font-bold text-white">{service.name}</h3>
+                <p className="text-gray-300 mt-3 text-sm">Professional detailing service tailored to your needs</p>
+              </div>
             </motion.div>
           ))}
         </motion.div>
