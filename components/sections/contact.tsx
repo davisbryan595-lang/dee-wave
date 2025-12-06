@@ -104,7 +104,7 @@ export default function Contact() {
             value={formData.address}
             onChange={handleChange}
             required
-            className="w-full px-6 py-3 rounded-lg bg-cyan-bright/10 border-2 border-cyan-bright/50 text-white placeholder-gray-400 focus:border-cyan-bright outline-none transition-all"
+            className="w-full px-6 py-3 rounded-lg bg-white/10 backdrop-blur-xl border border-white/30 text-white placeholder-white/50 focus:bg-white/20 focus:border-white/50 outline-none transition-all"
           />
 
           <motion.select
@@ -113,7 +113,7 @@ export default function Contact() {
             value={formData.service}
             onChange={handleChange}
             required
-            className="w-full px-6 py-3 rounded-lg bg-cyan-bright/10 border-2 border-cyan-bright/50 text-white focus:border-cyan-bright outline-none transition-all"
+            className="w-full px-6 py-3 rounded-lg bg-white/10 backdrop-blur-xl border border-white/30 text-white focus:bg-white/20 focus:border-white/50 outline-none transition-all"
           >
             <option value="" disabled>
               Select Service
