@@ -39,8 +39,8 @@ export default function Contact() {
           className="text-center mb-16"
         >
           <h2 className="text-5xl md:text-6xl font-bold text-white mb-4">Book Your Detail</h2>
-          <p className="text-cyan-bright text-lg">Let's make your car shine like never before</p>
-          <div className="w-32 h-1 bg-gradient-wave mx-auto rounded-full mt-4" />
+          <p className="text-white-pure/80 text-lg">Let's make your car shine like never before</p>
+          <div className="w-32 h-1 bg-gradient-to-r from-wave-dark-blue via-white-pure to-pink-hot mx-auto rounded-full mt-4" />
         </motion.div>
 
         <motion.form
