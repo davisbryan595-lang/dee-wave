@@ -39,11 +39,16 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
 
-  /* Add DeeWave custom colors */
+  /* DeeWave brand colors extracted from logo */
   --navy-dark: #0f172a;
-  --wave-blue: #3b82f6;
-  --cyan-bright: #06b6d4;
-  --pink-foam: #f472b6;
+  --wave-dark-blue: #0052CC;
+  --wave-blue: #1E88E5;
+  --wave-bright-blue: #3B82F6;
+  --cyan-bright: #00D9FF;
+  --cyan-light: #80F0FF;
+  --pink-hot: #E81E8C;
+  --pink-bright: #FF1493;
+  --pink-foam: #F472B6;
   --white-pure: #ffffff;
 }
 
