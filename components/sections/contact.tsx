@@ -82,7 +82,7 @@ export default function Contact() {
               value={formData.phone}
               onChange={handleChange}
               required
-              className="px-6 py-3 rounded-lg bg-cyan-bright/10 border-2 border-cyan-bright/50 text-white placeholder-gray-400 focus:border-cyan-bright outline-none transition-all"
+              className="px-6 py-3 rounded-lg bg-white/10 backdrop-blur-xl border border-white/30 text-white placeholder-white/50 focus:bg-white/20 focus:border-white/50 outline-none transition-all"
             />
             <motion.input
               whileFocus={{ scale: 1.02 }}
@@ -92,7 +92,7 @@ export default function Contact() {
               value={formData.vehicle}
               onChange={handleChange}
               required
-              className="px-6 py-3 rounded-lg bg-cyan-bright/10 border-2 border-cyan-bright/50 text-white placeholder-gray-400 focus:border-cyan-bright outline-none transition-all"
+              className="px-6 py-3 rounded-lg bg-white/10 backdrop-blur-xl border border-white/30 text-white placeholder-white/50 focus:bg-white/20 focus:border-white/50 outline-none transition-all"
             />
           </div>
 
