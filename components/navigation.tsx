@@ -26,7 +26,7 @@ export default function Navigation() {
         {/* Call Button */}
         <a
           href="tel:727-408-1143"
-          className="px-6 py-2 rounded-full bg-wave-blue hover:bg-cyan-bright text-white font-semibold transition-all glow-cyan"
+          className="px-6 py-2 rounded-full bg-wave-blue hover:bg-wave-bright-blue text-white font-semibold transition-all glow-blue"
         >
           Call 727-408-1143
         </a>
