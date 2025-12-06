@@ -50,7 +50,7 @@ export default function Contact() {
           onSubmit={handleSubmit}
           className="space-y-4 sm:space-y-6"
         >
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
             <motion.input
               whileFocus={{ scale: 1.02 }}
               type="text"
@@ -59,7 +59,7 @@ export default function Contact() {
               value={formData.name}
               onChange={handleChange}
               required
-              className="px-6 py-3 rounded-lg bg-white/10 backdrop-blur-xl border border-white/30 text-white placeholder-white/50 focus:bg-white/20 focus:border-white/50 outline-none transition-all"
+              className="px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg bg-white/10 backdrop-blur-xl border border-white/30 text-white placeholder-white/50 focus:bg-white/20 focus:border-white/50 outline-none transition-all text-sm sm:text-base"
             />
             <motion.input
               whileFocus={{ scale: 1.02 }}
@@ -69,11 +69,11 @@ export default function Contact() {
               value={formData.email}
               onChange={handleChange}
               required
-              className="px-6 py-3 rounded-lg bg-white/10 backdrop-blur-xl border border-white/30 text-white placeholder-white/50 focus:bg-white/20 focus:border-white/50 outline-none transition-all"
+              className="px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg bg-white/10 backdrop-blur-xl border border-white/30 text-white placeholder-white/50 focus:bg-white/20 focus:border-white/50 outline-none transition-all text-sm sm:text-base"
             />
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
             <motion.input
               whileFocus={{ scale: 1.02 }}
               type="tel"
@@ -82,7 +82,7 @@ export default function Contact() {
               value={formData.phone}
               onChange={handleChange}
               required
-              className="px-6 py-3 rounded-lg bg-white/10 backdrop-blur-xl border border-white/30 text-white placeholder-white/50 focus:bg-white/20 focus:border-white/50 outline-none transition-all"
+              className="px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg bg-white/10 backdrop-blur-xl border border-white/30 text-white placeholder-white/50 focus:bg-white/20 focus:border-white/50 outline-none transition-all text-sm sm:text-base"
             />
             <motion.input
               whileFocus={{ scale: 1.02 }}
@@ -92,7 +92,7 @@ export default function Contact() {
               value={formData.vehicle}
               onChange={handleChange}
               required
-              className="px-6 py-3 rounded-lg bg-white/10 backdrop-blur-xl border border-white/30 text-white placeholder-white/50 focus:bg-white/20 focus:border-white/50 outline-none transition-all"
+              className="px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg bg-white/10 backdrop-blur-xl border border-white/30 text-white placeholder-white/50 focus:bg-white/20 focus:border-white/50 outline-none transition-all text-sm sm:text-base"
             />
           </div>
 
@@ -104,7 +104,7 @@ export default function Contact() {
             value={formData.address}
             onChange={handleChange}
             required
-            className="w-full px-6 py-3 rounded-lg bg-white/10 backdrop-blur-xl border border-white/30 text-white placeholder-white/50 focus:bg-white/20 focus:border-white/50 outline-none transition-all"
+            className="w-full px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg bg-white/10 backdrop-blur-xl border border-white/30 text-white placeholder-white/50 focus:bg-white/20 focus:border-white/50 outline-none transition-all text-sm sm:text-base"
           />
 
           <motion.select
@@ -113,7 +113,7 @@ export default function Contact() {
             value={formData.service}
             onChange={handleChange}
             required
-            className="w-full px-6 py-3 rounded-lg bg-white/10 backdrop-blur-xl border border-white/30 text-white focus:bg-white/20 focus:border-white/50 outline-none transition-all"
+            className="w-full px-4 sm:px-6 py-2.5 sm:py-3 rounded-lg bg-white/10 backdrop-blur-xl border border-white/30 text-white focus:bg-white/20 focus:border-white/50 outline-none transition-all text-sm sm:text-base"
           >
             <option value="" disabled className="bg-navy-dark text-white">
               Select Service
@@ -130,7 +130,7 @@ export default function Contact() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             type="submit"
-            className="w-full py-4 rounded-lg bg-gradient-to-r from-wave-dark-blue via-wave-bright-blue to-pink-hot text-white text-lg font-bold hover:shadow-2xl hover:shadow-pink-hot/50 transition-all"
+            className="w-full py-3 sm:py-4 rounded-lg bg-gradient-to-r from-wave-dark-blue via-wave-bright-blue to-pink-hot text-white text-base sm:text-lg font-bold hover:shadow-2xl hover:shadow-pink-hot/50 transition-all"
           >
             Book Your Detail
           </motion.button>
