@@ -156,18 +156,26 @@
 
 @layer utilities {
   .glow-cyan {
-    @apply shadow-[0_0_20px_rgba(6,182,212,0.6)];
+    @apply shadow-[0_0_20px_rgba(0,217,255,0.6)];
   }
 
   .glow-pink {
-    @apply shadow-[0_0_20px_rgba(244,114,182,0.6)];
+    @apply shadow-[0_0_20px_rgba(232,30,140,0.6)];
+  }
+
+  .glow-blue {
+    @apply shadow-[0_0_20px_rgba(30,136,229,0.6)];
   }
 
   .gradient-wave {
-    @apply bg-gradient-to-r from-wave-blue via-cyan-bright to-pink-foam;
+    @apply bg-gradient-to-r from-wave-dark-blue via-wave-bright-blue to-pink-hot;
+  }
+
+  .gradient-wave-alt {
+    @apply bg-gradient-to-r from-wave-bright-blue via-cyan-bright to-pink-bright;
   }
 
   .gradient-button {
-    @apply bg-gradient-to-r from-wave-blue to-pink-foam text-white font-semibold shadow-lg hover:shadow-xl transition-all;
+    @apply bg-gradient-to-r from-wave-blue to-pink-hot text-white font-semibold shadow-lg hover:shadow-xl transition-all;
   }
 }
