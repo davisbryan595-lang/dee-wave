@@ -10,10 +10,10 @@ export default function ServiceArea() {
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-16"
         >
-          <h2 className="text-5xl md:text-6xl font-bold text-white mb-4">Service Area</h2>
-          <p className="text-cyan-bright text-lg">Serving Pinellas, Pasco & Hillsborough Counties</p>
+          <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4">Service Area</h2>
+          <p className="text-cyan-bright text-base sm:text-lg">Serving Pinellas, Pasco & Hillsborough Counties</p>
         </motion.div>
 
         <motion.div
