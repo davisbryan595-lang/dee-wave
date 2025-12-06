@@ -42,7 +42,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.8 }}
-          className="text-6xl md:text-7xl font-bold text-white mb-4 leading-tight"
+          className="text-4xl sm:text-5xl md:text-7xl font-bold text-white mb-4 leading-tight"
         >
           DEEWAVE
         </motion.h1>
@@ -51,7 +51,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.8 }}
-          className="text-2xl md:text-3xl font-bold text-white mb-2"
+          className="text-xl sm:text-2xl md:text-3xl font-bold text-white mb-2"
         >
           MOBILE DETAILING
         </motion.h2>
@@ -61,7 +61,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.8 }}
-          className="text-lg md:text-xl text-cyan-bright mb-12 font-light glow-cyan"
+          className="text-sm sm:text-lg md:text-xl text-cyan-bright mb-8 sm:mb-12 font-light glow-cyan"
         >
           We Come To You — Pinellas • Pasco • Hillsborough
         </motion.p>
